@@ -3,7 +3,8 @@
   "version": "4.2.15",
   "license": "MIT",
   "scripts": {
-    "start": "set NODE_OPTIONS=--openssl-legacy-provider && razzle start",
+    "start": "razzle start",
+    "start:dev": "set NODE_OPTIONS=--openssl-legacy-provider && razzle start",
     "build": "razzle build",
     "test": "razzle test --env=jsdom",
     "start:prod": "NODE_ENV=production node build/server.js"
